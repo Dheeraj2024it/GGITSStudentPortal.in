@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GGITS => StudentPortal</title>
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="second.css">
+    <style>
+        .one {
+            background-image: url('ggitslogo.png');
+            background-repeat: no-repeat;
+            font-family: monospace;
+            text-transform: capitalize;
+            font-weight: bold;
+            background-size: contain;
+            font-size: 12px;
+            text-align: center;
+            width: 90px;
+            height: 90px;
+            background-position: right;
+            background-color: rgb(149, 132, 132);
+        }
+        
+        .one {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 90px;
+            /* position: relative;
+            left: 4px; */
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <div class="one">
+        <span style="color:rgb(242, 238, 242)"><span style="color:rgb(239, 250, 33)"> Address:</span> P.O. Tilwara Ghat, Near Bargi Hills, Jabalpur, Madhya Pradesh 482003</span> <br>
+        <strong id="cen" style="color:rgb(239, 250, 33)">Contact Us:<br> <span style="color:rgb(11, 12, 12)">098935
+                56449 , 9425323089, 9893556449 </span><br><a href="mailto:contact@ggits.org"><span id="et-info-email"
+                    style="color:rgb(247, 241, 55)">contact@ggits.org</span></a></strong>
+    </div>
+    <div class="head">
+        <ul type="none">
+
+            <li>
+                <a href="https://github.com/" class="fab fa-github" style="color:white; background-color: black;" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/dheeraj-pyasi-6a319a247/" class="fab fa-linkedin" style="color:rgb(21, 21, 244)" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/gyangangaofficial" class="fab fa-facebook" style="color:rgb(18, 18, 246)" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org/z/" class="fab fa-telegram" style="color:rgb(11, 11, 248)" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/gyanganga_official/" class="fab fa-instagram" style="color:rgb(233, 104, 125)" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://web.whatsapp.com/" class="fab fa-whatsapp" style="color:rgb(125, 238, 125)" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://in.pinterest.com/login/" class="fab fa-pinterest" style="color:red" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" class="fab fa-twitter" style="color:rgb(224, 57, 57);" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://www.quora.com/" class="fab fa-quora" style="color:rgb(224, 57, 57);" target="_blank"></a>
+            </li>
+
+
+
+
+
+        </ul>
+
+    </div>
+
+    <div class="img">
+        <div class="containers">
+            <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="best.png" class="d-block w-100" alt="https://source.unsplash.com/1600x900/?php,code">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ggits.png" class="d-block w-100" alt="https://source.unsplash.com/1600x900/?php,code">
+
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <img src="product.png" class="d-block w-100" alt="https://source.unsplash.com/1600x900/?php,code">
+                        <div class="carousel-caption d-none d-md-block">
+
+
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br><br>
+    <div class="main-content-site">
+        <ul>
+            <li>
+                <a href="https://dheeraj2024it.github.io/PlacementGuidence/" target="_blank" rel="noopener noreferrer"><img src="placement.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.sih.gov.in/" target="_blank"><img src="sih.png" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://gyangangamoodle.in/" target="_blank"> <img src="moodel.png" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a href="https://id.cisco.com/signin/refresh-auth-state/00izx6ojcAyOIz3fjMGuJAhBz4ftKGqV4oUjrS6Kd2"><img src="cisco.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.awsacademy.com/vforcesite/LMS_Login"> <img src="aws.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://academy.oracle.com/en/oa-student.html"><img src="oracle.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.rgpv.ac.in/Login/StudentLogin.aspx" target="_blank" rel="noopener noreferrer"><img src="stu.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.rgpv.ac.in/Uni/frm_ViewScheme.aspx" target="_blank" rel="noopener noreferrer"><img src="syllabus.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.rgpv.ac.in/Uni/frm_ViewTT.aspx?id=$%" target="_blank" rel="noopener noreferrer"><img src="EXAM.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="http://result.rgpv.ac.in/result/programselect.aspx?id=$%" target="_blank" rel="noopener noreferrer"><img src="result.gif" alt="" width="400px" height="200px"></a>
+            </li>
+            <br>
+            <li>
+                <a href="https://dheeraj2024it.github.io/GgitsProgrammingQuiz/" target="_blank" rel="noopener noreferrer"> <img src="quiz.gif" alt="" width="100px" height="100px"></a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <footer id="main-footer" style="background-color:black; color: white;">
+        <div>
+            <div class="target-foot">
+
+                <div>
+                    <h2>Address</h2>
+                    <span>P.O. Tilwara Ghat, Near Bargi Hills,Jabalpur 482003
+                            <br>GGITS Telephone:<br>8770834794<br>Registrar : Sudeepto Mukherjee<br>9584667722
+                            </apan>
+                    </div>
+                    <div>
+                        <a class="et_pb_button et_pb_button_13 et_pb_bg_layout_dark"
+                            href="https://www.google.com/maps/place/Gyan+Ganga+Institute+of+Technology+%26+Sciences/@23.1291635,79.8748309,15z/data=!4m2!3m1!1s0x0:0xc066b027d5fb1488?ved=2ahUKEwjH8Kel6IThAhUxg-YKHcqcBbIQ_BIwC3oECAEQCA"
+                            target="_blank"> <span id="map">Map and Directions</span></a>
+                </div>
+            </div>
+
+            <div class="et_pb_button_module_wrapper et_pb_button_13_wrapper et_pb_button_alignment_left et_pb_module ">
+                <!-- <a class="et_pb_button et_pb_button_13 et_pb_bg_layout_dark"
+                    href="https://www.google.com/maps/place/Gyan+Ganga+Institute+of+Technology+%26+Sciences/@23.1291635,79.8748309,15z/data=!4m2!3m1!1s0x0:0xc066b027d5fb1488?ved=2ahUKEwjH8Kel6IThAhUxg-YKHcqcBbIQ_BIwC3oECAEQCA"
+                    target="_blank"> <span>Map and Directions</span></a>
+                </div> -->
+            </div>
+            <!-- .et_pb_column -->
+            <div class="et_pb_column et_pb_column_1_4 et_pb_column_37    et_pb_css_mix_blend_mode_passthrough">
+
+
+                <div class="et_pb_module et_pb_text et_pb_text_8 et_pb_bg_layout_light  et_pb_text_align_left">
+
+
+                    <div class="et_pb_text_inner">
+                        <h2>Essential Links</h2>
+
+                        <p><a href="http://mail.ggits.org/" target="_blank" rel="noopener noreferrer">Staff
+                                    Email</a></p>
+                        <p><a href="http://mail.ggits.net" target="_blank" rel="noopener noreferrer">Student
+                                    Email</a></p>
+                        <p><a href="https://rgpv.refread.com/#/home">RGPV eLibrary </a></p>
+                        <p><a href="https://ggits.org/nirf-data/">NIRF Data</a></p>
+                        <p><a href="https://gyangangamoodle.in" target="_blank" rel="noopener noreferrer">Moodle</a>
+                        </p>
+                        <p><a href="http://103.233.79.87/beedu/login.aspx">CMS</a></p>
+                        <p><a href="http://ggits.org/result/">Results</a></p>
+                        <p><a href="http://ggits.net" target="_blank" rel="noopener noreferrer">Student Portal</a>
+                        </p>
+                        <p><a href="https://ggits.org/alumni-of-gyan-ganga">Alumni</a></p>
+                        <p><a href="https://www.aicte-india.org/feedback/index.php">AICTE Feedback</a></p>
+                        <p><a href="https://swayam.gov.in/">SWAYAM Portal</a></p>
+                        <p><a href="https://ggits.org/academies">Academies</a></p>
+                        <p><a href="https://tinyurl.com/fbggits123">Institution Facilities Feedback</a></p>
+                        <p><a href="https://tinyurl.com/fbggits">Student Feedback</a></p>
+                        <p><a href="https://tinyurl.com/ggitsalumni">Alumni Feedback</a></p>
+                        <p><a href="https://tinyurl.com/ggitsparents">Parents Feedback</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- .et_pb_text -->
+        </div>
+        <!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_4 et_pb_column_38    et_pb_css_mix_blend_mode_passthrough">
+
+
+            <div class="et_pb_module et_pb_text et_pb_text_9 et_pb_bg_layout_light  et_pb_text_align_left">
+
+
+
+            </div>
+            <!-- .et_pb_text -->
+
+        </div>
+        <!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_4 et_pb_column_39    et_pb_css_mix_blend_mode_passthrough">
+
+
+            <div class="et_pb_module et_pb_text et_pb_text_10 et_pb_bg_layout_light  et_pb_text_align_left">
+
+
+
+            </div>
+            <!-- .et_pb_text -->
+        </div>
+        <!-- .et_pb_column -->
+
+
+        </div>
+        <!-- .et_pb_row -->
+
+
+        </div>
+        <!-- .et_pb_section -->
+
+        <element class="wp-block-audio">
+
+
+            <div id="footer-bottom">
+                <div class="container clearfix">
+                    <ul class="et-social-icons">
+
+
+                    </ul>
+                    <div id="footer-info">Designed by Dheeraj Pyasi <span style="color:red;"> ♥ </span><a href="#">IT -
+                                5th Sem [2020-2024]</a>
+                    </div>
+                </div>
+                <!-- .container -->
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+
+
+
+
+<!-- <element class="wp-block-audio">
+    …
+      <figcaption> -->
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
